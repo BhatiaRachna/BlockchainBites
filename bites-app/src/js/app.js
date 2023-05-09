@@ -667,8 +667,10 @@ const abi = [
 	}
 ]
 
+const Web3 = require('web3');
 
-const web3 = new Web3(Web3.givenProvider || 'http://127.0.0.1:7545');
+// Connect to the Goerli network
+const web3 = new Web3('https://sepolia.infura.io/v3/d95c35eea31041868055e61a639b3b15');
 const contract = new web3.eth.Contract(abi, contractAddress);
 
 const donorRegisterForm = document.getElementById('donorRegistration-form');
