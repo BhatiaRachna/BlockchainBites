@@ -1,4 +1,4 @@
-const contractAddress = '0x221DA138319EF859D08D574d3998030577dEeBB2'; // Replace with your contract address
+const contractAddress = '0x93390e2bff3FFF43be94F9c815687C4bef921960'; // Replace with your contract address
 const abi = [
 	{
 		"inputs": [],
@@ -666,6 +666,7 @@ const abi = [
 		"type": "function"
 	}
 ]
+
 
 const Web3 = require('web3');
 
