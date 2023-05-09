@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Donor Registration Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<style>
+		/* Style the header */
+		header {
+			background-color: #333;
+			color: white;
+			padding: 0.15em;
+			text-align: center;
+			margin-bottom: 1px;
+		}
+
+		h2 {
+			text-align: center;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			font-size: 2em;
+			font-weight: bold;
+			color: #333;
+		}
+
+		form {
+			max-width: 400px;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 30px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+			border-radius: 5px;
+		}
+
+		label {
+			font-size: 1.2em;
+			font-weight: bold;
+			color: #333;
+			margin-bottom: 10px;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="password"] {
+			width: 100%;
+			height: 40px;
+			border: 1px solid #ccc;
+			padding: 10px;
+			border-radius: 5px;
+			font-size: 1em;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+		}
+
+		button[type="submit"] {
+			background-color: #333;
+			color: white;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			font-size: 1.2em;
+			cursor: pointer;
+		}
+
+		button[type="submit"]:hover {
+			background-color: #555;
+		}
+	</style>
+
+
+	<header>
+		<h1>BlockchainBites</h1>
+	</header>
+	<h2>Donor Registration Form</h2>
+	<form id="donorRegistration-form" action="home.html">
+		<label for="name">Name:</label>
+		<input type="text" name="name" id="name" required>
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email" required>
+		<label for="password">Password:</label>
+		<input type="password" name="password" id="password" required>
+		<button type="submit">Register</button>
+	</form>
+	<script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+	<script src="./js/app.js"></script>
+</body>
+
+</html>
